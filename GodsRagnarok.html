@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gods of Ragnarok</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            background-color: #F5F5F5;
+            font-family: 'Georgia', serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2, h5 {
+            text-shadow: 2px 2px 4px #000000;
+            color: #555;
+        }
+
+        h2{
+            text-align: center;
+        }
+
+        p {
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+        .card {
+            margin-bottom: 20px;
+            transition: transform 0.3s ease-in-out;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card-zeus {
+            box-shadow: 0 0 10px rgba(255, 255, 0, 0.8), 0 0 20px rgba(255, 255, 0, 0.5), 0 0 30px rgba(255, 255, 0, 0.3);
+        }
+
+        .card-odin {
+            box-shadow: 0 0 15px rgba(0, 0, 255, 0.8), 0 0 30px rgba(0, 0, 255, 0.5), 0 0 45px rgba(0, 0, 255, 0.3);
+        }
+
+        .card-seth {
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.8), 0 0 30px rgba(255, 0, 0, 0.5), 0 0 45px rgba(255, 0, 0, 0.3);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .card-description {
+            padding: 20px;
+            text-align: justify;
+        }
+
+        footer {
+            background-color: #333;
+            color: #FFF;
+            padding: 10px 0;
+        }
+
+        .card img {
+    width: 400px; /* Largura padronizada */
+    height: 400px; /* Altura padronizada */
+    display: block;
+    object-fit: cover; /* Mantém a proporção da imagem e cobre completamente o espaço */
+}
+
+.card-description {
+    padding: 20px;
+    text-align: justify;
+}
+
+.card-zeus, .card-odin, .card-seth {
+    width: 400px; /* Largura padronizada para todos os tipos de card */
+}
+
+.footer {
+    background-color: #333;
+    color: #FFF;
+    padding: 10px 0;
+}
+
+form {
+            max-width: 600px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form label {
+            color: #333;
+        }
+
+        form button {
+            margin-top: 15px;
+        }
+        
+    </style>
+    <link rel="icon" href="_imagens/1-428.jpg" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Gods of Ragnarok</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto"> <!-- Adicione a classe ml-auto aqui -->
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Pagina inicial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projetos">Divindades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Crie sua conta</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="sobre">
+            <div class="container">
+                <h2>Sobre</h2>
+                <p>Adentre o universo do Desenvolvedor Mestre, um RPG digital onde a magia do código se entrelaça com mitologias do desenvolvimento web. Nesta jornada única, você é o protagonista.<br>
+
+                   <br>Escolha entre divindades digitais, como Zeus, Odin e Seth, cada uma representando habilidades únicas. Enfrente desafios, desbloqueie conquistas e supere bugs como criaturas míticas.
+                    
+                    Sua escolha moldará sua jornada. Seja o Desenvolvedor Mestre, vença desafios e escreva sua história neste reino digital extraordinário.</p><br>
+            </div>
+        </section>
+        <section id="projetos">
+            <div class="container">
+                <h2>Escolha sua divindade preferida</h2><br>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card card-zeus">
+                            <img src="https://img.freepik.com/fotos-premium/retrato-de-zeus-contra-o-fundo-de-nuvens-e-relampagos_124715-3589.jpg" class="card-img-top" alt="Zeus">
+                            <div class="card-description">
+                                <h5 class="card-title">Zeus</h5>
+                                <p class="card-text">Zeus, o deus do trovão e rei dos deuses na mitologia grega. Ele governa o Monte Olimpo e é conhecido por seu poderoso raio. Seu domínio abrange o céu e a tempestade.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card-odin">
+                            <img src="https://t4.ftcdn.net/jpg/05/75/80/33/360_F_575803313_9KSRFN06cE8XVKpVTIK5Zkz2IEW23B8M.jpg" class="card-img-top" alt="Odin">
+                            <div class="card-description">
+                                <h5 class="card-title">Odin</h5>
+                                <p class="card-text">Odin, o pai de todos na mitologia nórdica. Ele é o deus dos trovões, da sabedoria e da guerra, frequentemente associado com lobos e corvos. Odin busca conhecimento e poder através de suas jornadas e sacrifícios.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card-seth">
+                            <img src="https://1.bp.blogspot.com/-NA_uE2ICeyI/VMObBywDzvI/AAAAAAAAHpo/Xhz6XBWOyRM/w603-h640/seth_by_laclillac-d55jj16.jpg" class="card-img-top" alt="Seth">
+                            <div class="card-description">
+                                <h5 class="card-title">Seth</h5>
+                                <p class="card-text descricao-deus">Seth, o deus egípcio do caos, da tempestade e da desordem. Associado ao deserto, Seth é frequentemente representado com características animais, como cabeça de animal, simbolizando sua natureza selvagem e imprevisível. Ele desafia a ordem estabelecida e personifica as forças caóticas da natureza.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contato">
+            <div class="container">
+                <div class="container">
+                    <h2>Crie sua conta</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="nome">Nome: <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="sobrenome">Sobrenome: <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="sobrenome" placeholder="Digite seu sobrenome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email: <span class="text-danger">*</span></label>
+                            <input type="email" class="form-control" id="email" placeholder="exemplo@email.com" required value="exemplo@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="dataNascimento">Data de Nascimento:</label>
+                            <input type="date" class="form-control" id="dataNascimento">
+                        </div>
+                        <div class="form-group">
+                            <label for="senha">Crie sua senha:</label>
+                            <input type="password" class="form-control" id="senha" placeholder="Crie sua senha">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Confirmar</button>
+                    </form>
+                </div>
+        </section>
+        
+        <footer>
+            <div class="container">
+                <p>&copy; 2024 Seu Nome. Todos os direitos reservados.</p>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
+
